@@ -26,7 +26,11 @@ class _RichTextWidget extends State<RichTextPage>{
               controller: _controller,
               onChanged: (value) {
                 setState(() {
-                  likeList = dataList.where((element) => element.contains(value)).toList();
+                  if(!value.isEmpty){
+                    likeList = dataList.where((element) => element.contains(value)).toList();
+                  }else{
+                    likeList.clear();
+                  }
                 });
               },
               decoration: InputDecoration(
