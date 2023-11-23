@@ -8,6 +8,7 @@ import 'package:flutter_test_demo/timerpickerpage.dart';
 import 'package:flutter_test_demo/videopage.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
+import 'bottomdialogpage.dart';
 import 'herotest.dart';
 import 'loadimg.dart';
 import 'viewpage.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(useMaterial3: true,),
       home:  Scaffold(
         appBar: AppBar(title: const Text("Flutter Demo"),centerTitle: true,),
-        body: TimerPickerPage(),
+        body: BottomDialogPage(),
       ),
     );
   }
