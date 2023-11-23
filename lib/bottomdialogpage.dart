@@ -16,9 +16,6 @@ class _BottomDialogWidget extends State<BottomDialogPage>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Bottom Sheet Example'),
-      ),
       body: Center(
         child: ElevatedButton(
           onPressed: () {
