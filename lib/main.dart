@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test_demo/richtext.dart';
+import 'package:flutter_test_demo/slivergridtest.dart';
 import 'package:flutter_test_demo/spinnerpage.dart';
 import 'package:flutter_test_demo/supportingtext.dart';
 import 'package:flutter_test_demo/switchtestpage.dart';
@@ -23,7 +24,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       localizationsDelegates: [
-        GlobalMaterialLocalizations.delegate
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: [
         const Locale('zh', 'CN'), // 中文简体
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
       ),
       home:  Scaffold(
         appBar: AppBar(title: Text("Flutter Demo"),centerTitle: true,),
-        body: RichTextPage(),
+        body: TimerPickerPage(),
       ),
     );
   }

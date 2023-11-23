@@ -28,10 +28,9 @@ class _TimerPickerWidget extends State<TimerPickerPage>{
   Future<void> _selectDate(BuildContext context) async {
     final DateTime? picked = await showDatePicker(
       context: context,
-      locale: Locale('zh', 'CN'),
       initialDate: DateTime.now(),
       firstDate: DateTime(2000, 1,1),
-      lastDate: DateTime(2023,11,16),
+      lastDate: DateTime(2024,11,16),
     );
     if (picked != null){
       print({picked.toString()});
