@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_test_demo/popbuttonpage.dart';
 import 'package:flutter_test_demo/richtext.dart';
 import 'package:flutter_test_demo/slivergridtest.dart';
 import 'package:flutter_test_demo/spinnerpage.dart';
@@ -8,8 +9,10 @@ import 'package:flutter_test_demo/tablebartest.dart';
 import 'package:flutter_test_demo/timerpickerpage.dart';
 import 'package:flutter_test_demo/videopage.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 import 'bottomdialogpage.dart';
+import 'gettest.dart';
 import 'herotest.dart';
 import 'kituitest.dart';
 import 'loadimg.dart';
@@ -25,7 +28,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
@@ -38,7 +41,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(useMaterial3: true,),
       home:  Scaffold(
         appBar: AppBar(title: const Text("Flutter Demo"),centerTitle: true,),
-        body: TableViewPage(),
+        body: PopButtonPage(),
       ),
     );
   }
