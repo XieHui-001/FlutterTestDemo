@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_test_demo/utils/aesutils.dart';
 import 'package:get/get.dart';
 
 class PopButtonPage extends StatefulWidget{
@@ -12,6 +13,7 @@ class _PopButtonWidget extends State<PopButtonPage>{
 
   @override
   Widget build(BuildContext context){
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Popup Menu Example'),
@@ -39,8 +41,8 @@ class _PopButtonWidget extends State<PopButtonPage>{
         ],
       ),
       body: Center(
-        child: ElevatedButton(child: Text('Press the Popup Menu button in the AppBar.'),onPressed: (){
-
+        child: ElevatedButton(child: const Text('Press the Popup Menu button in the AppBar.'),onPressed: (){
+          print("加密结果:${AesUtils.encrypt("sss")}");
         },),
       ),
     );
