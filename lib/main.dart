@@ -1,21 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test_demo/popbuttonpage.dart';
+import 'package:flutter_test_demo/qr_test_page.dart';
 import 'package:flutter_test_demo/richtext.dart';
 import 'package:flutter_test_demo/slivergridtest.dart';
 import 'package:flutter_test_demo/spinnerpage.dart';
 import 'package:flutter_test_demo/supportingtext.dart';
 import 'package:flutter_test_demo/switchtestpage.dart';
 import 'package:flutter_test_demo/tablebartest.dart';
+import 'package:flutter_test_demo/timer_test_page.dart';
 import 'package:flutter_test_demo/timerpickerpage.dart';
 import 'package:flutter_test_demo/videopage.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
+import 'background_test.dart';
 import 'bottomdialogpage.dart';
 import 'gettest.dart';
 import 'herotest.dart';
 import 'kituitest.dart';
 import 'loadimg.dart';
+import 'loading_animation_page.dart';
 import 'viewpage.dart';
 
 void main() {
@@ -39,9 +43,8 @@ class MyApp extends StatelessWidget {
        ],
       title: 'Flutter Demo',
       theme: ThemeData(useMaterial3: true,),
-      home:  Scaffold(
-        appBar: AppBar(title: const Text("Flutter Demo"),centerTitle: true,),
-        body: PopButtonPage(),
+      home:  const Scaffold(
+        body: ScanPage(),
       ),
     );
   }
