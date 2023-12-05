@@ -51,9 +51,10 @@ dev_dependencies:
   video_player: ^2.8.0 # 视频播放依赖
   flutter_localization: ^0.1.14 # 语言相关依赖
   encrypt: ^5.0.1 # 数据加密依赖
-  qr_code_scanner: ^1.0.1 # 二维码扫描 生成 依赖
+  qr_code_scanner: ^1.0.1 # 二维码扫描 依赖
   permission_handler: ^10.3.0 # 权限依赖
   vibration: ^1.8.4 # 震动依赖
+  qr_flutter: ^4.1.0 # 二维码生成 依赖
 
 
 # For information on the generic Dart part of this file, see the

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test_demo/popbuttonpage.dart';
+import 'package:flutter_test_demo/qr_image_test_page.dart';
 import 'package:flutter_test_demo/qr_test_page.dart';
 import 'package:flutter_test_demo/richtext.dart';
 import 'package:flutter_test_demo/slivergridtest.dart';
@@ -44,7 +45,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(useMaterial3: true,),
       home:  const Scaffold(
-        body: ScanPage(),
+        body: QrImageTestPage(),
       ),
     );
   }
